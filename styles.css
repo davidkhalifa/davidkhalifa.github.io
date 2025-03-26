@@ -1,0 +1,122 @@
+/* Base styles and typography */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f3f2f1;
+    color: #333;
+  }
+  h1, h2, h3 {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #000;
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    color: #005a9e; /* accent color for section titles */
+  }
+  
+  /* Header Styles */
+  .site-header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background: #fff;
+    border-bottom: 4px solid #0078D4; /* Microsoft blue accent line */
+  }
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 1.5rem;
+    animation: fadeIn 1s ease-in;
+  }
+  .title-block {
+    flex: 1;
+  }
+  .title-block h1 {
+    font-size: 2.5rem;
+  }
+  .title-block h2 {
+    margin-top: 0.2em;
+    font-size: 1.5rem;
+    color: #555;
+  }
+  .ms-logo {
+    height: 36px; /* Increase the size by 50% (24px * 1.5) */
+    margin-left: 0; /* Move the logo to the left */
+    vertical-align: middle;
+    align-self: center; /* Align vertically with the start of the title */
+  }
+  
+  /* About section */
+  .about {
+    padding: 1.5rem;
+    background: #fff;
+    margin: 1rem;
+    border-radius: 4px;
+  }
+  .about p {
+    line-height: 1.6;
+  }
+  
+  /* Organization section */
+  .organization {
+    padding: 1.5rem;
+    margin: 1rem;
+    background: #fff;
+    border-radius: 4px;
+  }
+  .organization p {
+    min-height: 2em;
+  }
+  #load-org-btn {
+    background: #0078D4;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  #load-org-btn:hover {
+    background: #005a9e;
+  }
+  
+  /* Footer styles */
+  .site-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    background: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .site-header {
+      flex-direction: column;
+      text-align: center;
+    }
+    .profile-photo {
+      margin: 0 0 1rem 0;
+    }
+    .ms-logo {
+      display: none; /* hide logo on very small screens if it doesn't fit */
+    }
+  }
+    
+  /* Fade-in animation for a subtle entrance effect */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
